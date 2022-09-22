@@ -1,0 +1,7 @@
+<settings>
+    <setting id="title" value="Artman Delta Robot Client Software" />
+    <setting id="width" value="800" />
+    <setting id="height" value="600" />
+    <setting id="theme" value="dark" />
+    <setting id="language" value="en" />
+</settings>

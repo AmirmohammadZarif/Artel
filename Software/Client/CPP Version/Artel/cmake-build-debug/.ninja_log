@@ -1,0 +1,7 @@
+# ninja log v5
+0	24370	1661621415318349621	CMakeFiles/Artel.dir/libs/imgui/imgui.cpp.o	14ba34e29eef02cf
+5	19020	1661621409972061292	CMakeFiles/Artel.dir/libs/imgui/imgui_widgets.cpp.o	4aed0cedef1d978e
+2	15147	1661621406103046625	CMakeFiles/Artel.dir/libs/imgui/imgui_draw.cpp.o	92b1dfd3f28a7874
+3	13130	1661621404077831625	CMakeFiles/Artel.dir/libs/imgui/imgui_tables.cpp.o	ce42fa8725f3fff7
+0	149	1661621487183104092	build.ninja	daacf27fabbfb467
+1	604	1661621487183104092	build.ninja	daacf27fabbfb467

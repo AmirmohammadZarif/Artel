@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "cmath": "cpp",
+        "compare": "cpp",
+        "cstdlib": "cpp",
+        "*.tcc": "cpp"
+    }
+}

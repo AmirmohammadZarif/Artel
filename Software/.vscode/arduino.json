@@ -1,0 +1,6 @@
+{
+    "board": "arduino:avr:uno",
+    "programmer": "arduino:usbasp",
+    "sketch": "Client/ArtelController/ArtelController.ino",
+    "port": "/dev/tty.usbmodem14201"
+}

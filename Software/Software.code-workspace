@@ -1,0 +1,46 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../../../repos/one_system_library"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"string": "cpp",
+			"iosfwd": "cpp",
+			"fstream": "cpp",
+			"locale": "cpp",
+			"*.tcc": "cpp",
+			"random": "cpp",
+			"queue": "cpp",
+			"stack": "cpp",
+			"algorithm": "cpp",
+			"__bit_reference": "cpp",
+			"__node_handle": "cpp",
+			"atomic": "cpp",
+			"bitset": "cpp",
+			"chrono": "cpp",
+			"cstddef": "cpp",
+			"deque": "cpp",
+			"__memory": "cpp",
+			"filesystem": "cpp",
+			"limits": "cpp",
+			"optional": "cpp",
+			"ratio": "cpp",
+			"system_error": "cpp",
+			"tuple": "cpp",
+			"type_traits": "cpp",
+			"vector": "cpp",
+			"__functional_base": "cpp",
+			"functional": "cpp",
+			"iterator": "cpp",
+			"memory": "cpp",
+			"array": "cpp",
+			"utility": "cpp",
+			"variant": "cpp"
+		}
+	}
+}

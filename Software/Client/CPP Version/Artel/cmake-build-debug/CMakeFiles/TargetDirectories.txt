@@ -1,0 +1,3 @@
+/Users/amirmohammad/Documents/Projects/Artman/Delta Robot/Software/Client/CPP Version/Artel/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/amirmohammad/Documents/Projects/Artman/Delta Robot/Software/Client/CPP Version/Artel/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/amirmohammad/Documents/Projects/Artman/Delta Robot/Software/Client/CPP Version/Artel/cmake-build-debug/CMakeFiles/Artel.dir
