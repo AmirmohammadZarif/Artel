@@ -110,7 +110,7 @@ class robot:
 
 
         # self.goToPosition(homeX, homeY, homeZ, 0.2)
-        self.serial.write(("G,28\n").encode())
+        self.serial.write(("$X\n").encode())
         Log.info("Home!")
         time.sleep(10)
 

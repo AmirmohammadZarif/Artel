@@ -46,7 +46,7 @@ interpolationSleep = 0.02
 endingSleep = 0.5
 
 palettebase = -243
-safebase = -220
+safebase = -240
 
 colors = [[120, 30],[120, 40],[120, 50]]
 paletteCorners = [[[-127.4, 134],[129, 138.8]],[[136.9, -127.7],[30, 48]]]

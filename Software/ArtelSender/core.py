@@ -98,6 +98,7 @@ class robot:
         x = 0
         y = 0
         z = -200
+        
     def getCurrentPosition(self):
         return self.pos()
 
