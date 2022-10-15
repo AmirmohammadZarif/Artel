@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{345A953E-A004-4648-B442-DC5F9F11068C}</ProjectGuid>
+    <RootNamespace>Artel</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>ArtelStudio</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)$(Configuration)\</IntDir>
+    <SourcePath>C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\External\nfd;C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\External\serial\impl;C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\External\serial;$(SourcePath)</SourcePath>
+    <IncludePath>C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\External\opencv\build\include;C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\External\stb;C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\External\nativefiledialog;C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\External\serial;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\External\opencv\build\x64\vc15\lib;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>C:\opencv\opencv\build\bin;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\External\imgui;.\External\imgui\backends;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;dxgi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(DXSDK_DIR)/Lib/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\opencv\opencv\build\include\opencv2;.\External\nfd;.\External\imgui;.\External\imgui\backends;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;dxgi.lib;opencv_world460d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\opencv\opencv\build\x64\vc15\lib;C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\External\imgui;$(DXSDK_DIR)/Lib/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>.\External\imgui;.\External\imgui\backends;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d10.lib;d3dcompiler.lib;dxgi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(DXSDK_DIR)/Lib/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>.\External\imgui;.\External\imgui\backends;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;dxgi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(DXSDK_DIR)/Lib/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include=".\External\imgui\imconfig.h" />
+    <ClInclude Include=".\External\imgui\imgui.h" />
+    <ClInclude Include=".\External\imgui\imgui_internal.h" />
+    <ClInclude Include=".\External\imgui\backends\imgui_impl_dx11.h" />
+    <ClInclude Include=".\External\serialib\serialib.h" />
+    <ClInclude Include=".\External\imgui\backends\imgui_impl_win32.h" />
+    <ClInclude Include="External\nativefiledialog\common.h" />
+    <ClInclude Include="External\nativefiledialog\nfd.h" />
+    <ClInclude Include="External\nativefiledialog\nfd_common.h" />
+    <ClInclude Include="External\nfd\common.h" />
+    <ClInclude Include="External\serial\SerialPort.h" />
+    <ClInclude Include="External\nfd\nfd.h" />
+    <ClInclude Include="External\stb\stb_image.h" />
+    <ClInclude Include="Sources\Base\Log.h" />
+    <ClInclude Include="Sources\Core\ImageProcessing.h" />
+    <ClInclude Include="Sources\Base\File.h" />
+    <ClInclude Include="Sources\Base\Image.h" />
+    <ClInclude Include="Sources\Core\Serial.h" />
+    <ClInclude Include="Sources\Application\GUILayer.h" />
+    <ClInclude Include="Sources\Artel.h" />
+    <ClInclude Include="Sources\ArtelEnd.h" />
+    <ClInclude Include="Sources\Application\Typography.h" />
+    <ClInclude Include="Sources\Application\Styles.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include=".\External\imgui\imgui.cpp" />
+    <ClCompile Include=".\External\imgui\imgui_draw.cpp" />
+    <ClCompile Include=".\External\imgui\imgui_demo.cpp" />
+    <ClCompile Include="Sources\Base\Log.cpp" />
+    <ClCompile Include="Sources\Application\Typography.cpp" />
+    <ClCompile Include="Sources\Application\Styles.cpp" />
+    <ClInclude Include=".\External\serialib\serialib.cppp" />
+    <ClCompile Include=".\External\imgui\imgui_tables.cpp" />
+    <ClCompile Include=".\External\imgui\imgui_widgets.cpp" />
+    <ClCompile Include=".\External\imgui\backends\imgui_impl_dx11.cpp" />
+    <ClCompile Include=".\External\imgui\backends\imgui_impl_win32.cpp" />
+    <ClCompile Include="External\nativefiledialog\nfd_common.c" />
+    <ClCompile Include="External\nativefiledialog\nfd_win.cpp" />
+    <ClCompile Include="External\serialib\serialib.cpp" />
+    <ClCompile Include="External\serial\SerialPort.cpp" />
+    <ClCompile Include="Sources\Core\ImageProcessing.cpp" />
+    <ClCompile Include="Sources\Base\File.cpp" />
+    <ClCompile Include="Sources\Base\Image.cpp" />
+    <ClCompile Include="Sources\Core\Serial.cpp" />
+    <ClCompile Include="Sources\Application\GUILayer.cpp" />
+    <ClCompile Include="Sources\Artel.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.txt" />
+    <None Include="External\nativefiledialog\nfd_cocoa.m" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\Images\test_image.jpeg" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

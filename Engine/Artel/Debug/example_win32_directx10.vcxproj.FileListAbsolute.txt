@@ -1,0 +1,2 @@
+C:\Users\NovinCeram\Source\Repos\ArtelStudio\ArtelStudio\External\imgui\examples\example_win32_directx10\Debug\example_win32_directx10.exe
+C:\Users\NovinCeram\Source\Repos\Artel\Debug\ArtelStudio.exe

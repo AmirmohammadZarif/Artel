@@ -1,0 +1,3 @@
+C:\Users\NovinCeram\Source\Repos\Artel\Debug\ArtelStudio.exe
+C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Debug\ArtelStudio.exe
+C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Debug\ArtelStudio.pdb

@@ -1,0 +1,51 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: The intermediate directory (C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Debug\) contains files shared from another project (example_win32_directx10.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.27.29112 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /IC:\opencv\opencv\build\include\opencv2 /I.\External\nfd /I.\External\imgui /I.\External\imgui\backends /ZI /JMC /W4 /WX- /diagnostics:column /Od /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Debug\\" /Fd"C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Debug\vc142.pdb" /Gd /TP /FC /errorReport:prompt .\External\imgui\imgui_demo.cpp Sources\Application\GUILayer.cpp Sources\Application\Styles.cpp Sources\Artel.cpp Sources\Base\Image.cpp
+  imgui_demo.cpp
+  GUILayer.cpp
+C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Sources\Application\GUILayer.cpp(81,10): warning C4189: 'show_another_window': local variable is initialized but not referenced
+C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Sources\Application\GUILayer.cpp(211,31): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Sources\Application\GUILayer.cpp(212,31): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Sources\Application\GUILayer.cpp(237,43): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Sources\Application\GUILayer.cpp(237,43): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Sources\Application\GUILayer.cpp(237,57): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Sources\Application\GUILayer.cpp(237,57): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Sources\Application\GUILayer.cpp(238,59): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Sources\Application\GUILayer.cpp(238,59): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Sources\Application\GUILayer.cpp(238,79): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Sources\Application\GUILayer.cpp(238,79): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Sources\Application\GUILayer.cpp(238,99): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Sources\Application\GUILayer.cpp(238,99): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Sources\Application\GUILayer.cpp(238,119): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Sources\Application\GUILayer.cpp(238,119): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Sources\Application\GUILayer.cpp(242,32): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Sources\Application\GUILayer.cpp(243,32): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Sources\Application\GUILayer.cpp(253,65): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Sources\Application\GUILayer.cpp(253,50): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Sources\Application\GUILayer.cpp(268,35): warning C4840: non-portable use of class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' as an argument to a variadic function
+C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Sources\Application\GUILayer.cpp(268,35): message : 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string' is non-trivial
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.27.29110\include\xstring(2272,5): message : see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string'
+C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Sources\Application\GUILayer.cpp(268,35): message : the constructor and destructor will not be called; a bitwise copy of the class will be passed as the argument
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.27.29110\include\xstring(4564,17): message : see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Sources\Application\GUILayer.cpp(278,78): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Sources\Application\GUILayer.cpp(278,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Sources\Application\GUILayer.cpp(410,15): warning C4189: 'zoom': local variable is initialized but not referenced
+C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Sources\Application\GUILayer.cpp(461,36): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Sources\Application\GUILayer.cpp(462,36): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Sources\Application\GUILayer.cpp(465,37): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Sources\Application\GUILayer.cpp(466,37): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Sources\Application\GUILayer.cpp(447,26): warning C4101: 'file': unreferenced local variable
+  Styles.cpp
+  Artel.cpp
+  Image.cpp
+  Generating Code...
+  Artel.vcxproj -> C:\Users\Microdev Co\Documents\Artel\Engine\ArtelPro\Debug\ArtelStudio.exe

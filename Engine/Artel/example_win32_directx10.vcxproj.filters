@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{0587d7a3-f2ce-4d56-b84f-a0005d3bfce6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources">
+      <UniqueIdentifier>{08e36723-ce4f-4cff-9662-c40801cf1acf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include=".\External\imgui\imconfig.h" />
+    <ClInclude Include=".\External\imgui\imgui.h" />
+    <ClInclude Include=".\External\imgui\imgui_internal.h" />
+    <ClInclude Include=".\External\imgui\backends\imgui_impl_dx10.h" />
+    <ClInclude Include=".\External\imgui\backends\imgui_impl_win32.h" />
+    <ClInclude Include="Sources\Artel.h" />
+    <ClInclude Include="Sources\Application\GUILayer.h" />
+    <ClInclude Include="Sources\ArtelEnd.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Sources\Artel.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include=".\External\imgui\imgui.cpp" />
+    <ClCompile Include=".\External\imgui\imgui_draw.cpp" />
+    <ClCompile Include=".\External\imgui\imgui_demo.cpp" />
+    <ClCompile Include=".\External\imgui\imgui_tables.cpp" />
+    <ClCompile Include=".\External\imgui\imgui_widgets.cpp" />
+    <ClCompile Include=".\External\imgui\backends\imgui_impl_dx10.cpp" />
+    <ClCompile Include=".\External\imgui\backends\imgui_impl_win32.cpp" />
+    <ClCompile Include="Sources\Application\GUILayer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.txt" />
+    <None Include=".\External\imgui\misc\debuggers\imgui.natvis" />
+  </ItemGroup>
+</Project>

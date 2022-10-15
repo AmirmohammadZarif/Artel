@@ -33,7 +33,7 @@ class robot:
 
         self.x = 0
         self.y = 0
-        self.z = -200
+        self.z = -450
 
         self.serial = None
         self.connected = False
@@ -89,14 +89,14 @@ class robot:
         self.connected = True
         try:
             self.serial = serial.Serial(port, baudrate)
-            Log.info(f"Connected to Arduino DUE on {port} @ {baudrate}")
+            Log.info(f"Connected to Artel Controller on {port} @ {baudrate}")
             time.sleep(3)
 
             self.setHome()
             return self.serial
         except:
             self.connected = False
-            Log.error(f"Unable to connect to Arduino on {port} @ {port}")
+            Log.error(f"Unable to connect to Artel Controller on {port} @ {port}")
 
     def setHome(self):
         '''
@@ -110,9 +110,12 @@ class robot:
 
 
         # self.goToPosition(homeX, homeY, homeZ, 0.2)
+        self.serial.write(("$H\n").encode())
         self.serial.write(("$X\n").encode())
+        self.serial.write(("G10 P0 L20 X70 Y70 Z70\n").encode())
+        
         Log.info("Home!")
-        time.sleep(10)
+        time.sleep(2)
 
     def loadConfig(self):
         '''
@@ -135,13 +138,16 @@ class robot:
         '''
         def pick(ser):
             try:  
-                ser.write(("M,3").encode())
+                # ser.write(("M,3").encode())
+                print("M03 Action")
             except:
                 Log.error("Failed to pick tile")
             
         def place(ser):
             try:  
-                ser.write(("M,5").encode())
+                # ser.write(("M,5").encode())
+                print("M05 Action")
+
             except:
                 Log.error("Failed to place tile")
 
@@ -173,30 +179,27 @@ class robot:
     def motionEaseQuad(self, t):
         return -(t * (t - 2))
 
-    def goToPosition(self, X, Y, Z, speed):
+    def goToPosition(self, X, Y, Z, feed):
         '''
         Go to a specific position in working area.
         -> X, Y, Z of Destination position
-        -> Speed : in the range of [0, 1]
+        -> feed : in the range of [0, 100]
         '''
 
         interpolationSleep = 0.1
         
-        steps = 50
-
-
-
+        steps = 2
         head_X, head_Y, head_Z = self.getCurrentPosition()
-        steps = int(sqrt(pow(X - head_X, 2) + pow(Y - head_Y, 2) + pow(Z - head_Z, 2)))
+        # steps = int(sqrt(pow(X - head_X, 2) + pow(Y - head_Y, 2) + pow(Z - head_Z, 2)))
         for t in np.linspace(0, 1, steps):
-
+            # while True:
             quint_t = self.motionEaseQuad(t)
             Log.verbose(f'\t Quint t {round(quint_t,self.p_point)}')
 
             Xt = head_X + ((X - head_X) * round(quint_t, 2))
             Yt = head_Y + ((Y - head_Y) * round(quint_t, 2))
             Zt = head_Z + ((Z - head_Z) * round(quint_t, 2))
-
+            
             deltas = self.kinematic.inverse(float(Xt), float(Yt), float(Zt))
 
             M1 = float(deltas[1])
@@ -207,11 +210,8 @@ class robot:
             Machine3 = str(int(M3))
             
             if(self.connected):
-                self.serial.write((f"X,{Machine1}\n").encode())
-                self.serial.write((f"Y,{Machine2}\n").encode())
-                self.serial.write((f"Z,{Machine3}\n").encode())
-                self.serial.write((f"G,1\n").encode())
-                # print(str(self.serial.readline()))
+                self.serial.write((f"G21 G90 G00 X{Machine1} Y{Machine2} Z{Machine3} F200\n").encode())
+    
                 Log.info("Data Sent!")
             
             self.setCurrentPosition(Xt, Yt, Zt)
@@ -224,6 +224,12 @@ class robot:
             time.sleep(interpolationSleep)
 
             Log.info(f'\t End Pos : X{round(Xt, self.p_point)}, Y:{round(Yt, self.p_point)}, Z:{round(Zt, self.p_point)}')
+                # try:
+                #     if(str(self.serial.readline()) == "ok"):
+                #         break
+                # except:
+                #     print("failed")
+
 
     def goToCellAt(self, i, j, speed, placeTile=True):
         '''

@@ -1,0 +1,5 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(534,5): warning MSB8028: The intermediate directory (C:\Users\NovinCeram\Source\Repos\Artel\Debug\) contains files shared from another project (example_win32_directx10.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  GUILayer.cpp
+  Artel.cpp
+  Generating Code...
+  example_win32_directx10.vcxproj -> C:\Users\NovinCeram\Source\Repos\Artel\Debug\ArtelStudio.exe

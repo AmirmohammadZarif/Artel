@@ -35,7 +35,7 @@ kinematicClass = DeltaRobotKinematics.kinematics()
 
 # Initialize Robot class
 Robot = robot.robot()
-client = Robot.connect('/dev/cu.usbmodem14201', 115200)
+client = Robot.connect('/dev/cu.usbmodem2017_2_251', 115200)
 
 
 P0 = [0,0,-200]
@@ -45,8 +45,8 @@ steps = 20
 interpolationSleep = 0.02
 endingSleep = 0.5
 
-palettebase = -243
-safebase = -240
+palettebase = -443
+safebase = -440
 
 colors = [[120, 30],[120, 40],[120, 50]]
 paletteCorners = [[[-127.4, 134],[129, 138.8]],[[136.9, -127.7],[30, 48]]]
